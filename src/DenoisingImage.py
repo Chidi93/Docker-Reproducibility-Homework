@@ -20,7 +20,7 @@ image = img_as_float(io.imread("Lena-image.png")).astype(np.float32)
 # estimate the noise standard deviation from the noisy image
 sigma_est = np.mean(estimate_sigma(image, multichannel=True))
 
-print(f"estimated noise standard deviation = {sigma_est}")
+print("estimated noise standard deviation = {}".format(sigma_est))
 
 #Defining a dictionary for the input parameters to Denoising Algorithm
 patch_kw = dict(patch_size=5,      # 5x5 patches
