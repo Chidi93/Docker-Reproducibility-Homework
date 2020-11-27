@@ -1,14 +1,10 @@
 """
-====================
-Build image pyramids
-====================
-
-The ``pyramid_gaussian`` function takes an image and yields successive images
-shrunk by a constant scale factor. Image pyramids are often used, e.g., to
-implement algorithms for denoising, texture discrimination, and scale-invariant
-detection.
+=========================================
+Build Clear images from Distorted images
+=========================================
 
 """
+
 from skimage.restoration import denoise_nl_means, estimate_sigma
 from skimage import img_as_float, img_as_ubyte
 from skimage import io
