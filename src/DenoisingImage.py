@@ -15,7 +15,7 @@ from skimage import io
 import numpy as np
 
 
-image = img_as_float(io.imread("Lena-image.png")).astype(np.float32)
+image = img_as_float(io.imread("Lena-Noisy-image.png")).astype(np.float32)
 
 # estimate the noise standard deviation from the noisy image
 sigma_est = np.mean(estimate_sigma(image, multichannel=True))
@@ -34,5 +34,5 @@ denoise_image = denoise_nl_means(image, h=1.15 * sigma_est, fast_mode=False,
 denoise_image_as_8byte = img_as_ubyte(denoise_image)
 
 #Save the output to current directory
-io.imsave("Denoised_Image.png", denoise_image_as_8byte)
+io.imsave("Denoised-Output-Image.png", denoise_image_as_8byte)
 
