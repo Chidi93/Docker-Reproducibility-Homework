@@ -21,3 +21,7 @@
 
 
 # The output of the denoised image should look exactly like the one I have in the output folder in the git repository.
+
+# We can reproduce the output of the experiment when running the generated docker image inside a container.
+
+# I created multiple containers from the same image by giving each of the containers a different name and it reproduced the same result. 
