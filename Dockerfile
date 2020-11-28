@@ -21,10 +21,10 @@ COPY Lena-Noisy-image.png .
 COPY Denoising_Image.py .
 
 #We have to install python library named numpy
-RUN pip install numpy-1.19.4
+RUN pip install numpy
 
 #We need another package called scikit-image which is used for image processing
-RUN pip install scikit-image-0.17.2
+RUN pip install scikit-image
 
 #Run the python code.
 CMD ["python", "./Denoising_Image.py"]
