@@ -12,7 +12,7 @@ FROM python:3
 RUN git clone https://github.com/Chidi93/Docker-Reproducibility-Homework.git
 
 #Working directory
-WORKDIR /usr/src/app
+WORKDIR /Docker-Reproducibility-Homework
 
 #We need to copy the noisy image
 COPY Lena-Noisy-image.png .
